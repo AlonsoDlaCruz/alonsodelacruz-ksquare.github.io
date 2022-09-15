@@ -1,1 +1,138 @@
-hello this is my test
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>AddFan</title>
+  <!--<link rel="stylesheet" href="styles.css">-->
+  <style>
+    body {background-color: #FFFE91;}
+
+h1 {text-align: center; color: red;}
+h2 {text-align: center; color: forestgreen;}
+h3 {text-align: left;}
+
+.comment_box
+{
+    width: 400px;
+    height: 160px;
+    border:4px solid green;
+}
+
+.form-element{
+    padding-top: 8px;
+    padding-bottom: 7px;
+    margin-right: 80px;
+    ruby-align: auto;
+}
+  </style>
+</head>
+<body>
+    <header>
+        <h1>KILLER POLLO FAN CLUB</h1>
+        <h2>JOIN UP</h2>
+    </header>
+    <p></p>
+    <p><center><img class="fit-picture"  src=https://cuadrantelocal.com/wp-content/uploads/ninja-forms/35/FFA70BC3-064E-4779-BB7E-92408BC48249.png
+    alt="Killer Pollo" style="height: 40%; width: 40%;" ></center></p>
+    <p></p>
+    <form>
+        <p><h3>Create a new user</h3></p>
+        <section><!--userdata-->
+            <div class="form-element">
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username">
+
+            </div>
+
+            <div class="form-element">
+                <label for="email">E-Mail:</label>
+                <input type="email" name="email" id="email">
+
+            </div>
+
+            <div class="form-element">
+                <label for="pass">Password:</label>
+                <input type="password" name="pass" id="pass">
+
+            </div>
+
+            <div class="form-element">
+                <label for="first-name">First Name:</label>
+                <input type="text" name="first-name" id="first-name">
+
+            </div>
+
+            <div class="form-element">
+                <label for="last-name">Last Name:</label>
+                <input type="text" name="last-name" id="last-name">
+
+            </div>
+
+        </section>
+
+        <section><!--info-->
+            <h4>Please complete the information below</h4>
+            <div class="form-element">
+                <label for="chickens">¿How many chickens do you have?</label>
+                <input type="number" min="0" step="1" >
+            </div>
+
+            <div class="form-element">
+                <label for="menbership">Select your membership</label>
+                <select name="menbership" id="membership">
+                    <option value="">select a membership!</option>
+                    <option value="1">Chicken (free)</option>
+                    <option value="2">Rooster</option>
+                    <option value="3">Killer Pollo</option>
+                    <!-- the selected value is the value of the element-->
+                    </select>
+            </div>
+
+        </section>
+        <p></p>
+
+        <fieldset> 
+            <p>Select your starting clan (this can be changed latter)</p>
+
+            <ol>
+                <li><input type="radio" id="fire" name="clan" value="fire">
+                    <label for="fire">Fire Tribe</label>
+                </li>
+                <li><input type="radio" id="water" name="clan" value="water">
+                    <label for="water">Water Team</label>
+                </li>
+                <li><input type="radio" id="grass" name="clan" value="grass">
+                    <label for="grass">Grass Gang</label>
+                </li>
+            </ol>
+        </fieldset>
+
+        <section>
+            <p>We want to improve your future experiences, so leave a comment 
+                below to give us feedback! </p>
+
+                <input type="text" class="comment_box">
+
+                <p></p>
+                <p>
+                    <input type="checkbox" id="other" name="other" value="0">
+        <label for="other">I want to add another fan</label>
+                </p>
+
+                
+
+        </section>
+        <p></p>
+
+
+
+
+
+    </form>
+    <button type="submit" form="form1" value="Submit">Submit</button>
+
+</body>
+</html>
+
+</body>
